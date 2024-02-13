@@ -32,6 +32,7 @@ function App() {
     let originalAmount = parseInt(transAmount);
         if(text===''|| transAmount===''){
            toast.error('Please enter the details');
+         return ;
         }
         setTransHistory([...transHistory , 
           {text:text ,
